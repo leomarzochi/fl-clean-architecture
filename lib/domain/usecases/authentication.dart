@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
 import '../entities/entities.dart';
 
@@ -11,6 +11,4 @@ class AuthenticationParams {
   final String secret;
 
   AuthenticationParams({@required this.email, @required this.secret});
-
-  Map toJson() => {'email': email, 'password': secret};
 }
